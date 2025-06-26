@@ -2,6 +2,7 @@
 
 A simple command-line scientific calculator written in Python.  
 It supports basic arithmetic, roots, powers, logarithms, and trigonometric functions (including their inverses).
+Remember- errors are part of the codes character :)
 
 ## Files
 
