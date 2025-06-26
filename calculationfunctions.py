@@ -66,52 +66,26 @@ def log(num, base):
 
 def cosine(angle):
     #Calculate the cosine of an angle
-    input("Do you want to calculate in radians or degrees? (r/d):")
-    if input.lower() == 'r':
-        angle = float(input("Enter the angle in radians: "))
-        cosineans = math.cos(angle)
-        print(f"The cosine of {angle} radians is {cosineans}")  
-    elif input.lower() == 'd':
-        angle = float(input("Enter the angle in degrees: "))
-        radians = math.radians(angle)
-        cosineans = math.cos(radians)
-        print(f"The cosine of {angle} degrees is {cosineans}")
-    else:
-        print("Invalid input. Please enter 'r' for radians or 'd' for degrees.")
-        cosine (angle)
+    angle = float(input("Enter the angle in degrees: "))
+    radians = math.radians(angle)
+    cosineans = math.cos(radians)
+    print(f"The cosine of {angle} degrees is {cosineans}")
 
 def sine(angle):
     #Calculate the sine of an angle
-    input("Do you want to calculate in radians or degrees? (r/d):")
-    if input.lower() == 'r':
-        angle = float(input("Enter the angle in radians: "))
-        sineans = math.sin(angle)
-        print(f"The sine of {angle} radians is {sineans}")  
-    elif input.lower() == 'd':
-        angle = float(input("Enter the angle in degrees: "))
-        radians = math.radians(angle)
-        sineans = math.sin(radians)
-        print(f"The sine of {angle} degrees is {sineans}")
-    else:
-        print("Invalid input. Please enter 'r' for radians or 'd' for degrees.")
-        sine(angle)
+    angle = float(input("Enter the angle in degrees: "))
+    radians = math.radians(angle)
+    sineans = math.sin(radians)
+    print(f"The sine of {angle} degrees is {sineans}")
+    
 
 def tangent(angle):
     #Calculate the tangent of an angle
-    input("Do you want to calculate in radians or degrees? (r/d):")
-    if input.lower() == 'r':
-        angle = float(input("Enter the angle in radians: "))
-        tangentans = math.tan(angle)
-        print(f"The tangent of {angle} radians is {tangentans}")  
-    elif input.lower() == 'd':
-        angle = float(input("Enter the angle in degrees: "))
-        radians = math.radians(angle)
-        tangentans = math.tan(radians)
-        print(f"The tangent of {angle} degrees is {tangentans}")
-    else:
-        print("Invalid input. Please enter 'r' for radians or 'd' for degrees.")
-        tangent(angle)
-
+    angle = float(input("Enter the angle in degrees: "))
+    radians = math.radians(angle)
+    tangentans = math.tan(radians)
+    print(f"The tangent of {angle} degrees is {tangentans}")
+    
 def inverse_cosine(value):
     #Calculate the inverse cosine (arccos) of a value
     value = float(input("Enter a value for inverse cosine: "))
@@ -119,7 +93,7 @@ def inverse_cosine(value):
         print("Error: Value must be between -1 and 1.")
     else:
         arccosans = math.acos(value)
-        print(f"The inverse cosine of {value} is {arccosans} radians.")
+        print(f"The inverse cosine of {value} is {arccosans} radians or {math.degrees(arccosans)} degrees.")
 
 def inverse_sine(value):
     #Calculate the inverse sine (arcsin) of a value
@@ -128,10 +102,10 @@ def inverse_sine(value):
         print("Error: Value must be between -1 and 1.")
     else:
         arcsinans = math.asin(value)
-        print(f"The inverse sine of {value} is {arcsinans} radians.")
+        print(f"The inverse sine of {value} is {arcsinans} radians or {math.degrees(arcsinans)} degrees.")
 
 def inverse_tangent(value):
     #Calculate the inverse tangent (arctan) of a value
     value = float(input("Enter a value for inverse tangent: "))
     arctanans = math.atan(value)
-    print(f"The inverse tangent of {value} is {arctanans} radians.")
+    print(f"The inverse tangent of {value} is {arctanans} radians or {math.degrees(arctanans)} degrees.")
